@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="round">
+      <h2>Round</h2>
+      <span class="roundNumber">1</span>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="info">
+          <h3>You :</h3>
+          <span id="playerScore">0</span>
+        </div>
+        <div class="show">
+          <div class="load" id="l1"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="info">
+          <h3>Computer :</h3>
+          <span id="computerScore">0</span>
+        </div>
+        <div class="show computer">
+          <div class="load" id="l2"></div>
+        </div>
+      </div>
+    </div>
+    <h2 id="result">Choose One !</h2>
+    <div class="selection">
+      <button id="close-image" class="paper" onclick="pap()">
+        <img src="asset/paper.png" />
+      </button>
+      <button id="close-image" class="rock" onclick="roc()">
+        <img src="asset/rock.png" />
+      </button>
+      <button id="close-image" class="scissors" onclick="sci()">
+        <img src="asset/scissors.png" />
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
